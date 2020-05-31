@@ -1,0 +1,23 @@
+{
+  "name": "sentinelapp",
+  "version": "1.0.0",
+  "description": "Node app for interacting with Sentinel",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Node;",
+    "Sentinel;"
+  ],
+  "author": "Adithya Radhakrishnan",
+  "license": "ISC",
+  "dependencies": {
+    "@sentinel-hub/sentinelhub-js": "^0.2.19",
+    "axios": "^0.19.2",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "js-file-download": "^0.4.12",
+    "q": "^1.5.1"
+  }
+}
