@@ -30,7 +30,10 @@ function download(date, writeDir = "./output/") {
     .then((success) => console.log(success))
     .catch((err) => {
       // handle timeouts  and internal server error -- try again
-      if (err.response && (err.response.status === 504 err.response.status === 500) ) {
+      if (
+        err.response &&
+        (err.response.status === 504 || err.response.status === 500)
+      ) {
         console.log(`Timed out; retrying for ${date}`);
         return download(date, writeDir);
       }
