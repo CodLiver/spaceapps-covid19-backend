@@ -46,7 +46,7 @@ function run() {
   var now = new Date();
 
   // populate dates array so that we can call all of them in in parallel with promise.all
-  for (var d = new Date(2020, 0, 1); d <= now; d.setDate(d.getDate() + 1)) {
+  for (var d = new Date(2019, 5, 1); d <= now; d.setDate(d.getDate() + 1)) {
     // need to be in YYYY-MM-DD
     let yyyy = String(d.getFullYear());
 
