@@ -1,0 +1,19 @@
+Location of the input folder containing HDF images
+
+os.chdir('C:\\InputFolder')
+
+Current script only reads the first file (if there are multiple files in the input folder).The rasterFiles[ ] index can be modified to select one specific file, or iterate through all files within the input folder
+
+hdflayer = gdal.Open(rasterFiles[0], gdal.GA_ReadOnly)
+
+Reading specfic raster layer - GetSubDatasets()[0][0] for first layer, GetSubDatasets()[1][0] for second layer, and so on
+
+hdflayer.GetSubDatasets()[0][0]
+
+Location of the folder for output images
+
+outputFolder = "C:\\OutputFolder\\"
+
+Display output GeoTiff image in QGIS (Only if the script is executed within QGIS python Console)
+
+iface.addRasterLayer(outputRaster, outputNameFinal) 
